@@ -12,7 +12,7 @@ const router = createBrowserRouter([
         errorElement:<ErrorPage/>,
         children:[
             {
-                index:true,
+                path:'/',
                 element:<Home/>
             },
             {
@@ -25,23 +25,6 @@ const router = createBrowserRouter([
             },
         ]
     },
-    // {
-    //     path:'/dashboard',
-    //     element:<Dashboard/>,
-    //     children:[
-    //         // admin routes
-    //         {
-    //             path: 'overview',
-    //             element: <AdminOverview />
-    //         },
-    //         // user routes
-    //         {
-    //             path:'myOrders',
-    //             element:<MyOrders/>
-    //         },
-    //     ]
-    // }
-   
 ]);
 
 export default router;
